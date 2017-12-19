@@ -1,0 +1,35 @@
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+$orange:			#fe6a0a;
+$teal:				#0e4151;
+$blue:				#184271;
+$red:				#c84916;
+$dkblue:			#21262c;
+$yellow:			$orange;	
+
+//fonts
+$butler:			'Butler_Regular';
+
+//nav
+$navbar-light-active-color: $orange;
+$navbar-light-color:		#fff;
+$navbar-light-hover-color:  $navbar-light-color;
+$btn-border-radius: 		0;
+$dropdown-bg:				#042b40;
+$dropdown-spacer:			0;
+$border-radius:				0;
+$dropdown-link-color:		#fff;
+
+//card
+$card-border-width:		0;
+$card-border-radius:	0;
+$card-cap-bg:		 #fff;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 769px,
+  lg: 992px,
+  xl: 1200px
+)

@@ -1,0 +1,107 @@
+body>footer{
+	background: $blue url(../images/footer-bg.jpg) center center no-repeat;
+	height: 500px;
+	color: #fff;
+    display: flex;
+    align-items: center;
+}
+body>footer .col-5{
+	padding-left: 50px;
+}
+body>footer h2{
+	font-size: 40px;
+	font-family: Butler_Medium;
+	line-height: 45px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+body>footer h2:after{
+	content: "";
+	display: block;
+	width: 25px;
+	border-bottom: 2px solid $orange;
+	margin-top: 20px;
+}
+body>footer h3{
+	font-size: 15px;
+	font-family: DINPro-Black;
+	margin-bottom: 25px;
+	border-right: 2px solid $orange;
+	padding-right: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	display: inline-block;
+    margin-top: 80px;
+    color: #fff
+}
+body>footer p{
+	font-family: Butler_Regular;
+	font-size: 30px;
+	span{
+		display: inline;
+		line-height: 1.5em;
+
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	body{
+		footer{
+			height: auto;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			background: $blue url(../images/footer-tab-bg.jpg) left top no-repeat;
+			h2{
+				margin-top: 130px;
+			}
+			h2:after{
+				content: none;
+			}
+			.container-fluid{
+				max-width: 90% !important;
+			}
+			.phones p{
+				span{
+					display: inherit;
+					line-height: 1.0em;
+				}
+			}
+			
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	body{
+		footer{
+			background: $blue url(../images/footer-mobile-bg.jpg) center top no-repeat;
+/*
+			h2{
+				margin-top: 0;
+			}
+			
+			.container-fluid{
+				max-width: 90% !important;
+			}
+*/
+			
+		}
+	}
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
+

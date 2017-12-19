@@ -1,0 +1,649 @@
+//home
+.home-hero{
+	background: transparent url(../images/home-hero-bg.jpg) top center/cover no-repeat;
+    height: 730px;
+    padding-top: 140px;
+}
+.home-hero h1{
+	font-family: DINPro-Black, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 80px;
+    letter-spacing: 0.2em;
+}
+.home-hero div>h1:first-of-type{
+	margin-left: -60px;
+	line-height: 1.0em;
+}
+.home-hero p{
+	font-family: Butler_Regular, serif;
+	color: #fff;
+	font-size: 30px;
+	border-left: 2px solid $orange;
+	padding-left: 25px;
+    padding-right: 9rem;
+
+}
+
+.selling-points{
+	background: $teal url(../images/selling-points-bg.jpg) center center repeat;
+}
+.selling-points .point{
+
+	color: #fff;
+	text-align: center;
+	height: 500px;
+	align-items: center;
+	display: flex;
+    padding-left: 3%;
+    padding-right: 3%;
+	flex-direction: column;
+	justify-content: center;
+	transition: all 0.2s;
+	img{
+		width: auto;
+	}
+}
+.selling-points .point:hover{
+	background-color: $blue;
+}
+.selling-points .point h2{
+	font-family: $butler;
+	font-size: 38px;
+	font-weight: normal;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	color: #fff;
+	opacity: 1;
+	transition: all 0.2s;
+}
+.selling-points .point p{
+	opacity: 0;
+	display: none;
+	visibility: hidden;
+	margin-top: 25px;
+	transition: all 0.2s;
+}
+.selling-points .point:hover p{
+	opacity: 1;
+	display: initial;
+	visibility: visible;
+}
+.selling-points .point:hover h2{
+	opacity: 0;
+	display: none;
+	visibility: hidden;
+}
+.selling-points .point span{
+	border-top: 2px solid $orange;
+	padding-top: 20px;
+	font-family: DINPro-Black;
+	font-size: 25px;
+	letter-spacing: .7rem;
+}
+.content-01{
+	padding-bottom: 75px;
+}
+.content-01 .text{
+	column-count: 2;
+	column-gap: 80px;
+    line-height: 2.5rem;
+}
+.content-01 .attornys-intro{
+	padding-top: 150px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.content-01 .attornys-intro .col-12{
+	z-index: 101;
+}
+@media (min-width: 1100px){
+	.content-01 .attornys-intro .col-12{
+		text-align: right;
+	}
+	.content-01 .attornys-intro div img{
+		z-index: 100;
+		margin-top: -160px;
+	    padding-right: 63px;
+	}
+}
+.content-01 .attornys-intro h1{
+	font-family: DINPro-Black;
+	font-size: 110px;
+	color: $red;
+	text-transform: uppercase;
+	letter-spacing: 1.7rem;
+}
+.content-01 .attornys-intro h2{
+	font-family: $butler;
+	font-size: 64px;
+	color: $blue;
+    letter-spacing: .2rem;
+    margin-bottom: 50px;
+}
+.content-01 .attornys-intro p{
+	font-family: $butler;
+	font-size: 30px;
+	color: $blue;
+	border-left: 2px solid $red;
+    padding-left: 50px;
+    margin-left: -40px;
+}
+.content-01 .divider{
+	display: flex;
+	flex-direction: row;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	align-items: center;
+	
+}
+.content-01 .divider hr{
+	width: 100%;
+	border-color: $red;
+}
+.content-01 .divider span{
+	white-space: nowrap;
+	margin-left: 25px;
+	margin-right: 25px;
+	font-family: DINPro-Black; 
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	color: $blue;
+
+}
+.content-01 .text h3{
+	font-family: $butler;
+	font-size: 30px;
+	color: $orange;
+    letter-spacing: -.05rem;
+    line-height: 2.5rem;
+}
+.content-01 .text p{
+	font-family: Yantramanav-Regular;
+	font-size: 17px;
+	color: $dkblue;
+	line-height: 3rem;
+	margin-bottom: 30px;
+
+}
+.content-01 .video h2{
+	font-family: $butler;
+	font-size: 45px;
+	color: $blue;
+	line-height: 55px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.content-01 .video .col{
+	margin-left: 20px;
+}
+.results{
+	background: transparent url(../images/stats-bg.jpg) center center/cover no-repeat;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	color: #fff;
+}
+.results h1{
+	font-family: DINPro-Black;
+	font-size: 110px;
+	text-transform: uppercase;
+	letter-spacing: 2rem;
+	
+}
+.results h1:last-of-type{
+	margin-left: 75px;
+	margin-bottom: 100px;
+}
+.results blockquote{
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom: 30px;
+}
+.results blockquote p{
+	font-family: $butler;
+	font-size: 40px;
+	border-left: 2px solid $orange;
+	padding-left: 15px;	
+}
+.results blockquote ~ .more-results{
+	margin-left: 50px;
+	font-family: DINPro-Black;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	border-radius: 0;
+	padding: 25px 70px;
+	
+}
+.results .stats{
+	color: #fff;
+	text-align: center;
+	font-family: DINPro-Medium;
+	font-size: 18px;
+
+}
+.results .col-6{
+	margin-bottom: 	75px;
+}
+.results .stats .stat{
+	color: $orange;
+	display: block;
+	font-size: 65px;
+	font-family: DINPro-Black;
+}
+.content-02-intro{
+	font-family: $butler;
+	font-size: 65px;
+	text-align: center;
+	color: $blue;
+	padding: 200px 110px;
+}
+.content-02-intro h1{
+	font-size: 65px;
+	font-family: $butler;
+	line-height: 1.5em;
+}
+.content-01 .text blockquote p{
+	font-size: 40px;
+	font-family: $butler;
+	color: $orange;
+	border-left: 2px solid $orange;
+	padding-left: 15px;
+}
+.form{
+	background: transparent url(../images/form-bg.jpg) center bottom/cover no-repeat;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.form h1{
+	font-family: DINPro-Black, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 136px;
+    letter-spacing: 0.2em;
+    margin-bottom: 75px;
+}
+.contact .location{
+	margin-bottom: 75px;
+}
+
+@mixin n-columns($min-width, $gutter, $last-equal: false, $max-cols: 5) {
+  .areas {
+    display: flex;
+    flex-wrap: wrap;
+  //  margin-left: -$gutter;
+    margin-top: $gutter;
+    padding-right: $gutter;
+
+    .menu-item {
+      flex: 1 0 $min-width;
+      margin-left: $gutter;
+   //   margin-top: $gutter;
+
+      @if $last-equal {
+        @for $i from 2 through $max-cols {
+          $screen-width: ($min-width*$i)+($gutter*$i);
+          $column-width: (100%/$i);
+          @media (min-width: $screen-width) {
+            max-width: calc(#{$column-width} - #{$gutter});
+          }
+        }
+    
+        $column-width: (100%/$max-cols);
+        @media (min-width: $min-width*$max-cols) {
+            min-width: calc(#{$column-width} - #{$gutter});
+        }
+      }
+    }
+  }
+}
+
+@include n-columns(200px, 40px, true, 3);
+
+.areas {
+  .menu-item {
+  	font-family: Butler_Medium;
+  	font-size: 30px;
+    color: $blue;
+    box-sizing: border-box;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #d7d7d7;
+    	a:hover{
+		  text-decoration: none;
+  		  color: $red;	    	
+    	}
+  }
+  .menu-item:nth-of-type(1),
+  .menu-item:nth-of-type(2),
+  .menu-item:nth-of-type(3){
+	  border: none;
+  }
+
+}
+
+
+@mixin n-columns($min-width, $gutter, $last-equal: false, $max-cols: 5) {
+  .case-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$gutter;
+  //  margin-top: calc((-$gutter)/(2));
+
+    .case-item {
+      flex: 1 0 $min-width;
+      margin-left: $gutter;
+   //   margin-top: $gutter;
+
+      @if $last-equal {
+        @for $i from 2 through $max-cols {
+          $screen-width: ($min-width*$i)+($gutter*$i);
+          $column-width: (100%/$i);
+          @media (min-width: $screen-width) {
+            max-width: calc(#{$column-width} - #{$gutter});
+          }
+        }
+    
+        $column-width: (100%/$max-cols);
+        @media (min-width: $min-width*$max-cols) {
+            min-width: calc(#{$column-width} - #{$gutter});
+        }
+      }
+    }
+  }
+}
+
+@include n-columns(200px, 50px, true, 2);
+
+.case-list{
+  .case-item {
+    color: $blue;
+    box-sizing: border-box;
+    padding: 10px 50px;
+		p{
+		    font-size: 25px;
+		    line-height: 28px;
+		}
+    	h3{
+			color: $orange;
+			margin-bottom: 10px;
+			font-size: 40px;
+    	}
+  
+  }
+}
+
+.hreview{
+	margin-bottom: 120px;
+	.reviewer{
+		text-transform: uppercase;
+		color: $red;
+		font-family: DINPro-Black;
+		font-size: 16px;
+	}
+	p{
+		font-size: 17px;
+	}
+}
+@media only screen and (min-width : 769px) {
+	.owl-carousel {
+	    display: inherit;
+	}
+}
+  /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.home-hero{
+		padding-top: 0;
+		background: transparent url(../images/home-hero-tablet-bg.jpg) center center/cover no-repeat;
+		height: auto;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		p,span{
+			margin-left: -30px;
+		}
+		
+	}
+	.container{
+		max-width: 90% !important;
+	}
+	.selling-points{
+		.point{
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		.point,
+		.point:hover{
+			height: auto;
+			h2,p{
+				opacity: 1;
+				display: inherit;
+				visibility: visible;
+			}
+			h2{
+			    margin-bottom: 0px;
+			    margin-top: 15px;
+			}
+			p{
+				margin-top: 5px;
+			}
+			img{
+				max-width: 100px;
+				height: auto;
+			}
+		}
+
+	}
+	.content-01{
+		.container{
+			max-width: 90% !important;
+	
+		}
+		.attornys-intro{
+		    padding-top: 100px;
+		    padding-left: inherit;
+		    padding-right: inherit;
+			h1 {
+			    font-size: 85px;
+			    letter-spacing: .6rem;
+			    text-align: center;
+			}
+
+			h2{
+				font-size: 46px;
+				letter-spacing: normal;
+				text-align: center;
+			}
+			p {
+			    font-size: 30px;		  
+			    border-left: none;
+			    padding-left: 0;
+			    margin-left: 0;
+			    text-align: center;
+			}
+			
+		} 
+		.text {
+		    column-count: 1;
+		    line-height: normal;
+		    margin: 0 -15px;
+		    padding: 0;
+		    width: auto;
+		    max-width: 100% !important;
+		}
+/*		.video{
+			margin-left: -30px;
+			margin-right: -30px;
+			h2{
+				font-size: 30px;
+				letter-spacing: normal;
+			}
+			.col{
+				margin-left: 0;
+			}
+		}
+*/
+	}
+	.results{
+		padding-top: 150px;
+		padding-bottom: 0;
+		.stats{
+			margin-top: 100px;
+			margin-bottom: 35px;
+		}
+		.more-results{
+			margin-top: 50px;
+		}
+	}
+	.content-02-intro{
+		padding: 75px 0;
+		margin-left: -30px;
+		margin-right: -30px;
+		h1{
+			font-size: 45px;
+			padding: 0 58px
+		}
+	}
+	.form{
+
+		h1{
+			font-size: 85px;
+		}
+	}
+	@include n-columns(200px, 50px, true, 1);
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	.home-hero{
+		padding-top: 0;
+		background: transparent url(../images/home-hero-mobile-bg.jpg) center center/cover no-repeat;
+		height: auto;
+		padding-top: 60px;
+		p,span{
+			margin-left: inherit;
+		}
+	}	
+	.home-hero div>h1:first-of-type,
+	.home-hero h1{
+		font-size: 45px;
+		margin-left: 0px;
+	}
+	.home-hero p {
+	    font-size: 28px;
+	    border-left: none;
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	.home-hero .btn-wrap{
+		padding: 0;
+		display: block;
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-top: 60px;
+	}
+	.home-hero .btn-warning {
+	    font-size: 14px;
+	    letter-spacing: .2rem;
+	    padding: 15px;
+	    text-align: center;
+	    width: 100%;
+	}
+	
+	.content-01{
+		.attornys-intro{
+		    padding-top: 50px;
+		    padding-left: 0;
+		    padding-right: 0;
+			h1 {
+			    font-size: 65px;
+			    letter-spacing: .5rem;
+			    overflow-wrap: break-word;
+			}
+
+			h2{
+				font-size: 40px;
+				letter-spacing: normal;
+			}
+			p {
+			    font-size: 26px;		  
+			    border-left: none;
+			    padding-left: 0;
+			    margin-left: 0;
+			}
+		} 
+		.text {
+		    column-count: 1;
+		    line-height: normal;
+		    margin: 0 -15px;
+		    padding: 0;
+		    width: auto;
+		}
+		.video{
+			margin-left: -30px;
+			margin-right: -30px;
+			h2{
+				font-size: 30px;
+				letter-spacing: normal;
+			}
+			.col{
+				margin-left: 0;
+			}
+		}
+	}
+	.results{
+		padding-top: 75px;
+		padding-bottom: 75px;
+		blockquote{
+		    padding-left: 0;
+		    padding-right: 0;
+		    margin-bottom: 0;
+    		p{
+				font-size: 35px;
+				line-height: 1.5em;
+			}
+		}
+		blockquote~.more-results{
+			margin-left: -15px;
+			margin-right: -15px;
+			display: flex;
+		}
+
+	}
+	.content-02-intro{
+		padding: 75px 0;
+		margin-left: -30px;
+		margin-right: -30px;
+		h1{
+			font-size: 38px;
+			padding: 0;
+		}
+	}
+	@include n-columns(200px, 0, true, 1);
+	.case-list .case-item {
+	    padding: 10px 15px;
+	}
+	.case-list{
+		.case-item{
+			h3 {
+			    font-size: 34px;
+			}
+		}
+	}
+
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
+

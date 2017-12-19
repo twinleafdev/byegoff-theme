@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+NAME="bgr-theme"
+SSH="ssh://67.225.169.131/theme-git/.git"
+
+rsync -av --progress ../$NAME ./production \
+  --exclude=.DS_Store \
+  --exclude=.bowerrc \
+  --exclude=.editorconfig \
+  --exclude=.git \
+  --exclude=.gitignore \
+  --exclude=.jscsrc \
+  --exclude=.jshintrc \
+  --exclude=.travis.yml \
+  --exclude=.git \
+  --exclude=assets \
+  --exclude=bower.json \
+  --exclude=bower_components \
+  --exclude=deploy \
+  --exclude=gulpfile.js \
+  --exclude=node_modules \
+  --exclude=package.json \
+  --exclude=ruleset.xml
+

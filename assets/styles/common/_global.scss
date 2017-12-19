@@ -1,0 +1,128 @@
+@font-face {
+    font-family: DINPro-Black;
+    src: url(../fonts/DINPro-Black.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Butler_Medium;
+    src: url(../fonts/Butler_Medium.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Butler_Regular;
+    src: url(../fonts/Butler_Regular.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Butler_Bold;
+    src: url(../fonts/Butler_Bold.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: DINPro-Medium;
+    src: url(../fonts/DINPro-Medium.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Yantramanav-Regular;
+    src: url(../fonts/Yantramanav-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: DINPro-Bold;
+    src: url(../fonts/DINPro-Bold.otf);
+    font-weight: normal;
+}
+
+p {
+	font-family: Yantramanav-Regular;
+	font-size: 17px;
+	line-height: 40px;	
+	margin-bottom: 25px;
+}
+h2{
+	font-family: Butler_Regular;
+	color: $red;	
+	margin-bottom: 25px;
+}
+h3{
+	font-family: Butler_Medium;
+	color: $blue;
+	margin-bottom: 25px;
+}
+.row.card{
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.60);
+	flex-direction: row;
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+#accordion > .card{
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.60);
+	margin-bottom: 50px;
+}
+#accordion > .card .card-header{
+	padding: 0;
+}
+#accordion > .card .card-header a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	padding: 50px;
+	background-image: url(../images/case-lever.png);
+	background-position: right bottom;
+	background-size: auto;
+	background-repeat: no-repeat;
+	font-family: DinPro-Black;
+	font-size: 18px;
+	color: $blue;
+	text-transform: uppercase;
+	transition: background-position ease .4s;
+	
+}
+
+#accordion > .card .card-header a.collapsed{
+	background-position: right top;
+}
+#accordion > .card .card-body{
+	margin-top: 10px;
+	margin-bottom: 75px;
+}
+.row.card > .col{
+	display: flex;
+	justify-content: space-around;
+}
+
+  /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.sidebar-primary .main,
+	.main{
+	    flex: 0 0 100% !important;
+	    max-width: 100% !important;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+
+	#accordion > .card .card-header a{
+		padding: 50px 15px;
+		background-image: url(../images/case-lever-mobile.png);
+		font-size: 16px;
+		
+	}
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}

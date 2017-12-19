@@ -1,0 +1,98 @@
+.our-attorneys{
+	display: flex;
+
+	.entry-content{
+		margin: 0 auto 0 75px;
+		flex-direction: column;
+		
+		.page-header{
+		    .entry-title::after{
+				content: none;
+			}
+			h2{
+				font-size: 40px;
+				color: $blue;
+				font-family: Butler_Medium;
+			}
+		}
+		.page-header:after{
+		    content: "";
+		    display: block;
+		    width: 90px;
+		    border-bottom: 5px solid #184271;
+		    margin-top: 60px;
+		    margin-bottom: 60px;
+	    }
+	}
+	.sidebar{
+	    flex: 0 0 40%;
+	    max-width: 40%;
+		img{
+			margin-bottom: 30px;
+		}
+		section{
+			padding-left: 40px;
+			padding-right: 40px;
+			color: $red;
+			font-size: 17px;
+			font-family: Yantramanav-Regular;
+			.team_member_name{
+				color: #000;
+			}
+			h4{
+				color: $blue;
+				font-size: 25px;
+				font-family: Butler_Medium;
+			}
+			ul{
+			    padding-left: 19px;
+			}
+			li,
+			p{
+				margin-bottom: 50px;
+				line-height: 2em;
+			}
+		}
+	}
+}
+.post-type-archive-our-attorneys{
+	.our-attorneys{
+		flex-direction: column;
+		header{
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			h1{
+				color: $red;
+				font-size: 40px;
+				font-family: Butler_Medium;
+			}
+			h2{
+				color: $blue;
+				font-size: 16px;
+				font-family: DINPro-Black;		
+			}
+		}
+		a{
+			position: relative;
+			text-align: center;
+			span{
+				position: absolute;
+				bottom: 0;
+				background: $blue;
+				color: #fff;
+				display: block;
+				width: 100%;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				opacity: 0;
+				transition: opacity ease .2s;
+			}
+		}
+		a:hover{
+			span{
+				opacity: 1;
+			}
+		}
+	}
+}
